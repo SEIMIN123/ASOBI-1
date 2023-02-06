@@ -3,25 +3,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  @mixin flex ($d, $j, $a) {
-  
+}
+
+@mixin flex ($d, $j, $a) {
+
     display: ($d);
     justify-content: ($j);
     align-items: ($a);
-  }
-  
-  @mixin border {
+}
+
+@mixin border {
     border: 1px solid black;
-  }
-  
-  @mixin mobile {
-    @media (max-width: 800px) {
-      @content;
+}
+
+@mixin mobile {
+    @media (max-width: 575px) {
+        @content;
     }
-  }
-  
+}
+
 @include mobile {
 
     #root {
@@ -29,118 +29,118 @@
         width: 100%;
         height: 350vh;
         // background: url(./pic/back5-1.jpg);
-        background: url(./pic/Super-Mario-Super-Mario-Bros-1899001-wallhere.com.jpg);
+        background: url("./pic/Super-Mario-Super-Mario-Bros-1899001-wallhere.com.jpg");
         background-size: cover;
         background-position: 75%;
         background-repeat: no-repeat;
         background-attachment: fixed;
         @include flex(flex, center, center);
-    
+
         .body1 {
-    
-          width: 85vw;
-          height: 40vh;
-          background-color: #d9d9d9;
-          border-radius: 20px;
-          margin-top: -300vh;
-          box-shadow: 0px 5px 5px 0px rgb(102, 102, 102);
-          position: absolute;
-          z-index: 2;
-          @include flex(flex, center, center);
+
+            width: 85vw;
+            height: 40vh;
+            background-color: #d9d9d9;
+            border-radius: 20px;
+            margin-top: -300vh;
+            box-shadow: 0 5px 5px 0 rgb(102, 102, 102);
+            position: absolute;
+            z-index: 2;
+            @include flex(flex, center, center);
         }
-    
+
         .splogo {
-    
-          width: 5vw;
-          height: 5vh;
-          position: absolute;
-          margin-top: -30vh;
-          margin-right: -58vw;
-          background: url(../superfamicom/pic/logo.png);
-          background-size: contain;
-          background-position: center center;
-          background-repeat: no-repeat;
-    
+
+            width: 5vw;
+            height: 5vh;
+            position: absolute;
+            margin-top: -30vh;
+            margin-right: -58vw;
+            background: url("../superfamicom/pic/logo.png");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+
         }
-    
+
         .body2 {
-    
-          width: 70vw;
-          height: 30vh;
-          border-radius: 10px;
-          margin-top: -4vh;
-          background-color: #808080;
-          @include flex(flex, center, center);
+
+            width: 70vw;
+            height: 30vh;
+            border-radius: 10px;
+            margin-top: -4vh;
+            background-color: #808080;
+            @include flex(flex, center, center);
         }
-    
+
         .pack {
-    
-          width: 60vw;
-          height: 4vh;
-          background-color: #b5b5b5;
-          margin-top: -15vh;
-          border-top-left-radius: 50px;
-          border-top-right-radius: 50px;
-          border-bottom-left-radius: 25vw;
-          border-bottom-right-radius: 25vw;
-          box-shadow: 0px 5px 5px rgb(102, 102, 102);
+
+            width: 60vw;
+            height: 4vh;
+            background-color: #b5b5b5;
+            margin-top: -15vh;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 25vw;
+            border-bottom-right-radius: 25vw;
+            box-shadow: 0 5px 5px rgb(102, 102, 102);
         }
-    
+
         .pack:active {
-    
-          transition: 0.2s;
-          box-shadow: 0 5px rgb(58, 57, 57);
-          transform: translateY(5px);
+
+            transition: 0.2s;
+            box-shadow: 0 5px rgb(58, 57, 57);
+            transform: translateY(5px);
         }
-    
+
         .body3 {
-    
-          width: 20vw;
-          height: 10vh;
-          margin-left: -40vw;
-          margin-bottom: -13vh;
-          position: absolute;
-          border-radius: 10px;
-          background-color: #d9d9d9;
-          box-shadow: 0px 10px 10px rgb(44, 44, 44);
-          @include flex(flex, center, center);
-    
+
+            width: 20vw;
+            height: 10vh;
+            margin-left: -40vw;
+            margin-bottom: -13vh;
+            position: absolute;
+            border-radius: 10px;
+            background-color: #d9d9d9;
+            box-shadow: 0 10px 10px rgb(44, 44, 44);
+            @include flex(flex, center, center);
+
         }
-    
+
         .body3-1 {
-    
-          width: 18vw;
-          height: 7vh;
-          position: absolute;
-          border-radius: 10px;
-          background-color: #454545;
-          @include flex(flex, center, center);
-    
+
+            width: 18vw;
+            height: 7vh;
+            position: absolute;
+            border-radius: 10px;
+            background-color: #454545;
+            @include flex(flex, center, center);
+
         }
-    
+
         .power1 {
-    
-          width: 15vw;
-          height: 1vh;
-          margin-bottom: -3vh;
-          position: absolute;
-          border-radius: 20px;
-          background-color: #d9d9d9;
-          box-shadow: 0px 5px 5px rgb(7, 7, 7);
-          cursor: pointer;
+
+            width: 15vw;
+            height: 1vh;
+            margin-bottom: -3vh;
+            position: absolute;
+            border-radius: 20px;
+            background-color: #d9d9d9;
+            box-shadow: 0 5px 5px rgb(7, 7, 7);
+            cursor: pointer;
         }
-    
+
         .powertext {
-    
-          font-size: 1vw;
-          margin-bottom: -5vh;
-          position: absolute;
-          color: #fff;
-    
+
+            font-size: 1vw;
+            margin-bottom: -5vh;
+            position: absolute;
+            color: #fff;
+
         }
-    
+
         .body4 {
-    
+
             width: 20vw;
             height: 10vh;
             margin-right: -40vw;
@@ -148,19 +148,19 @@
             position: absolute;
             border-radius: 10px;
             background-color: #d9d9d9;
-            box-shadow: 0px 10px 10px rgb(44, 44, 44);
+            box-shadow: 0 10px 10px rgb(44, 44, 44);
             @include flex(flex, center, center);
         }
-    
+
         .body4:active {
-    
-          transition: 0.2s;
-          box-shadow: 0 5px rgb(58, 57, 57);
-          transform: translateY(1px);
+
+            transition: 0.2s;
+            box-shadow: 0 5px rgb(58, 57, 57);
+            transform: translateY(1px);
         }
-    
+
         .body4-1 {
-    
+
             width: 18vw;
             height: 7vh;
             position: absolute;
@@ -168,90 +168,90 @@
             background-color: #454545;
             @include flex(flex, center, center);
         }
-    
+
         .reset {
-    
+
             font-size: 1vw;
             margin-bottom: -5vh;
             position: absolute;
             color: #fff;
         }
-    
+
         .body5 {
-    
-          width: 15vw;
-          height: 5vh;
-          position: absolute;
-          border-radius: 5px;
-          margin-bottom: -17vh;
-          background-color: #a1a1a1;
-          box-shadow: 0px 10px 10px rgb(102, 102, 102);
-          border: 0;
-          @include flex(flex, center, center);
-    
+
+            width: 15vw;
+            height: 5vh;
+            position: absolute;
+            border-radius: 5px;
+            margin-bottom: -17vh;
+            background-color: #a1a1a1;
+            box-shadow: 0 10px 10px rgb(102, 102, 102);
+            border: 0;
+            @include flex(flex, center, center);
+
         }
-    
+
         .body5:active {
-    
-          transition: 0.2s;
-          box-shadow: 0 5px rgb(58, 57, 57);
-          transform: translateY(5px);
+
+            transition: 0.2s;
+            box-shadow: 0 5px rgb(58, 57, 57);
+            transform: translateY(5px);
         }
-    
+
         .eject {
-          font-size: 1.2vw;
-          margin-bottom: -3vh;
-          position: absolute;
-          color: #fff;
-    
+            font-size: 1.2vw;
+            margin-bottom: -3vh;
+            position: absolute;
+            color: #fff;
+
         }
-    
+
         .light {
-    
-          width: 6vw;
-          height: 1vh;
-          position: absolute;
-          margin-bottom: -25vh;
-          margin-right: -80vw;
-          border-radius: 10px;
-          background-color: #585858;
+
+            width: 6vw;
+            height: 1vh;
+            position: absolute;
+            margin-bottom: -25vh;
+            margin-right: -80vw;
+            border-radius: 10px;
+            background-color: #585858;
         }
-    
+
         .nintendo {
-    
-          width: 15vw;
-          height: 5vh;
-          position: absolute;
-          margin-bottom: -35vh;
-          margin-left: -55vw;
-          background: url(../superfamicom/pic/nin.png);
-          background-size: cover;
-          background-position: center center;
-          background-repeat: no-repeat;
+
+            width: 15vw;
+            height: 5vh;
+            position: absolute;
+            margin-bottom: -35vh;
+            margin-left: -55vw;
+            background: url("../superfamicom/pic/nin.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
         }
-    
+
         .super {
-    
-          width: 20vw;
-          height: 4vh;
-          position: absolute;
-          margin-left: -50vw;
-          margin-bottom: -40vh;
-          background: url(../superfamicom/pic/super.png);
-          background-size: contain;
-          background-position: center center;
-          background-repeat: no-repeat;
+
+            width: 20vw;
+            height: 4vh;
+            position: absolute;
+            margin-left: -50vw;
+            margin-bottom: -40vh;
+            background: url("../superfamicom/pic/super.png");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
         }
-    
+
         .famicom {
-    
-          width: 100vw;
-          height: 35vh;
-          position: absolute;
-          margin-bottom: -115vh;
-          border: 10px solid white;
-          border-radius: 10px;
-          @include flex(flex, center, center);
+
+            width: 100vw;
+            height: 35vh;
+            position: absolute;
+            margin-bottom: -115vh;
+            border: 10px solid white;
+            border-radius: 10px;
+            @include flex(flex, center, center);
         }
 
         .famicom-1 {
@@ -259,42 +259,42 @@
             width: 100vw;
             height: 35vh;
         }
-    
+
         .control-1 {
-    
-          width: 20vw;
-          height: 5vh;
-          margin-left: -35vw;
-          margin-top: -260vh;
-          border-radius: 5px;
-          background-color: #3d3d3d;
-          position: absolute;
-          z-index: 1;
+
+            width: 20vw;
+            height: 5vh;
+            margin-left: -35vw;
+            margin-top: -260vh;
+            border-radius: 5px;
+            background-color: #3d3d3d;
+            position: absolute;
+            z-index: 1;
         }
-    
+
         .control-1-1 {
-    
-          width: 15vw;
-          height: 5vh;
-          margin-left: -35vw;
-          margin-top: -257vh;
-          border-radius: 5px;
-          background-color: #272727;
-          position: absolute;
+
+            width: 15vw;
+            height: 5vh;
+            margin-left: -35vw;
+            margin-top: -257vh;
+            border-radius: 5px;
+            background-color: #272727;
+            position: absolute;
         }
-    
+
         .line-1 {
-    
-          width: 3vw;
-          height: 20vh;
-          margin-left: -35vw;
-          margin-top: -232vh;
-          background-color: #272727;
-          position: absolute;
+
+            width: 3vw;
+            height: 20vh;
+            margin-left: -35vw;
+            margin-top: -232vh;
+            background-color: #272727;
+            position: absolute;
         }
-    
+
         .control-2 {
-    
+
             width: 20vw;
             height: 5vh;
             margin-right: -35vw;
@@ -304,9 +304,9 @@
             position: absolute;
             z-index: 1;
         }
-    
+
         .control-2-1 {
-    
+
             width: 15vw;
             height: 5vh;
             margin-right: -35vw;
@@ -314,11 +314,11 @@
             border-radius: 5px;
             background-color: #272727;
             position: absolute;
-    
+
         }
-    
+
         .line-2 {
-    
+
             width: 3vw;
             height: 20vh;
             margin-right: -35vw;
@@ -326,12 +326,12 @@
             background-color: #272727;
             position: absolute;
         }
-      }
-    
-      //-----------------------------------------------------------------
-    
-      .swi {
-    
+    }
+
+    //-----------------------------------------------------------------
+
+    .swi {
+
         width: 40vw;
         height: 55vh;
         position: absolute;
@@ -339,37 +339,37 @@
         border-radius: 30px;
         margin-top: -140vh;
         @include flex(flex, center, center);
-      }
+    }
 
-      .swi-1 {
+    .swi-1 {
 
         width: 65vw;
         height: 16vh;
         z-index: 99;
-      }
-    
-      .body-1 {
-    
+    }
+
+    .body-1 {
+
         width: 70vw;
         height: 20vh;
         margin-top: -140vh;
         background-color: #323639;
-        box-shadow: 0px 10px 10px rgb(102, 102, 102);
+        box-shadow: 0 10px 10px rgb(102, 102, 102);
         @include flex(flex, center, center);
-      }
-    
-      .body-2 {
-    
+    }
+
+    .body-2 {
+
         width: 65vw;
         height: 20vh;
-        background: url(./pic/zelda.png);
+        background: url("./pic/zelda.png");
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
-      }
-    
-      .left {
-    
+    }
+
+    .left {
+
         width: 10vw;
         height: 20vh;
         background-color: #00c4e4;
@@ -377,14 +377,14 @@
         margin-top: -140vh;
         border-top-left-radius: 100px;
         border-bottom-left-radius: 100px;
-        box-shadow: 0px 10px 10px rgb(102, 102, 102);
+        box-shadow: 0 10px 10px rgb(102, 102, 102);
         position: absolute;
         z-index: 10;
         @include flex(flex, center, center);
-      }
-    
-      .leftbtn {
-    
+    }
+
+    .leftbtn {
+
         width: 10vw;
         height: 20vh;
         background-color: #434340;
@@ -394,10 +394,10 @@
         border-bottom-left-radius: 100px;
         position: absolute;
         z-index: 2;
-      }
-    
-      .cir-1 {
-    
+    }
+
+    .cir-1 {
+
         width: 1.5vw;
         height: 1vh;
         border-radius: 100%;
@@ -405,18 +405,18 @@
         position: absolute;
         background-color: #3d3f4a;
         z-index: 9;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
-      }
-    
-      .cir-1:active {
-    
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
+    }
+
+    .cir-1:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .cir-2 {
-    
+    }
+
+    .cir-2 {
+
         width: 1.5vw;
         height: 1vh;
         border-radius: 100%;
@@ -424,18 +424,18 @@
         position: absolute;
         background-color: #3d3f4a;
         z-index: 8;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
-      }
-    
-      .cir-2:active {
-    
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
+    }
+
+    .cir-2:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .cir-3 {
-    
+    }
+
+    .cir-3 {
+
         width: 1.5vw;
         height: 1vh;
         border-radius: 100%;
@@ -443,18 +443,18 @@
         margin-top: -4vw;
         background-color: #3d3f4a;
         z-index: 7;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
-      }
-    
-      .cir-3:active {
-    
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
+    }
+
+    .cir-3:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .cir-4 {
-    
+    }
+
+    .cir-4 {
+
         width: 1.5vw;
         height: 1vh;
         border-radius: 100%;
@@ -462,18 +462,18 @@
         margin-bottom: -4vw;
         background-color: #3d3f4a;
         z-index: 6;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
-      }
-    
-      .cir-4:active {
-    
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
+    }
+
+    .cir-4:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .cir-5 {
-    
+    }
+
+    .cir-5 {
+
         width: 3vw;
         height: 2vh;
         border-radius: 100%;
@@ -481,11 +481,11 @@
         margin-top: -20vw;
         background-color: #3d3f4a;
         z-index: 5;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
-      }
-    
-      .rect-1 {
-    
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
+    }
+
+    .rect-1 {
+
         width: 1.5vw;
         height: 1vh;
         margin-right: -4vw;
@@ -493,18 +493,18 @@
         position: absolute;
         background-color: #3d3f4a;
         z-index: 4;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
-      }
-    
-      .rect-1:active {
-    
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
+    }
+
+    .rect-1:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .minus {
-    
+    }
+
+    .minus {
+
         width: 2vw;
         height: 1vh;
         margin-right: -5vw;
@@ -512,20 +512,20 @@
         position: absolute;
         background-color: #3d3f4a;
         z-index: 3;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
-      }
-    
-      .minus:active {
-    
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
+    }
+
+    .minus:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      //------------------------------------------------------------------
-    
-      .right {
-    
+    }
+
+    //------------------------------------------------------------------
+
+    .right {
+
         width: 10vw;
         height: 20vh;
         background-color: #ff6559;
@@ -533,14 +533,14 @@
         margin-top: -140vh;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
-        box-shadow: 0px 10px 10px rgb(102, 102, 102);
+        box-shadow: 0 10px 10px rgb(102, 102, 102);
         position: absolute;
         z-index: 10;
 
-      }
-    
-      .rightbtn {
-    
+    }
+
+    .rightbtn {
+
         width: 10vw;
         height: 20vh;
         background-color: #434340;
@@ -550,10 +550,10 @@
         border-bottom-right-radius: 100px;
         position: absolute;
         z-index: 2;
-      }
-    
-      .cir-6 {
-    
+    }
+
+    .cir-6 {
+
         width: 1.5vw;
         height: 1vh;
         border-radius: 100%;
@@ -562,43 +562,43 @@
         bottom: 15vh;
         position: absolute;
         background-color: #3d3f4a;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
         z-index: 9;
         color: #fff;
         @include flex(flex, center, center);
-      }
-    
-      .cir-6:active {
-    
+    }
+
+    .cir-6:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .cir-7 {
-          width: 1.5vw;
-          height: 1vh;
-          border-radius: 100%;
-          margin-left: 4vw;
-          bottom: 12vh;
-          position: absolute;
-          background-color: #3d3f4a;
-          box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
-          z-index: 8;
-          color: #fff;
-          font-size: 0.5px;
+    }
+
+    .cir-7 {
+        width: 1.5vw;
+        height: 1vh;
+        border-radius: 100%;
+        margin-left: 4vw;
+        bottom: 12vh;
+        position: absolute;
+        background-color: #3d3f4a;
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
+        z-index: 8;
+        color: #fff;
+        font-size: 0.5px;
         @include flex(flex, center, center);
-      }
-    
-      .cir-7:active {
-    
+    }
+
+    .cir-7:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .cir-8 {
-    
+    }
+
+    .cir-8 {
+
         width: 1.5vw;
         height: 1vh;
         border-radius: 100%;
@@ -606,23 +606,23 @@
         bottom: 13.5vh;
         position: absolute;
         background-color: #3d3f4a;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
         z-index: 7;
         color: #fff;
         font-size: 0.5px;
         cursor: pointer;
         @include flex(flex, center, center);
-      }
-    
-      .cir-8:active {
-    
+    }
+
+    .cir-8:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .cir-9 {
-    
+    }
+
+    .cir-9 {
+
         width: 1.5vw;
         height: 1vh;
         border-radius: 100%;
@@ -630,23 +630,23 @@
         bottom: 13.5vh;
         position: absolute;
         background-color: #3d3f4a;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
         z-index: 7;
         color: #fff;
         font-size: 0.5px;
         cursor: pointer;
         @include flex(flex, center, center);
-      }
-    
-      .cir-9:active {
-    
+    }
+
+    .cir-9:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .cir-10 {
-    
+    }
+
+    .cir-10 {
+
         width: 3vw;
         height: 2vh;
         border-radius: 100%;
@@ -654,13 +654,13 @@
         bottom: 8vh;
         position: absolute;
         background-color: #3d3f4a;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
         z-index: 5;
-    
-      }
-    
-      .rect-2 {
-    
+
+    }
+
+    .rect-2 {
+
         width: 1.5vw;
         height: 1vh;
         margin-left: 1.5vw;
@@ -668,20 +668,20 @@
         border-radius: 100%;
         position: absolute;
         background-color: #3d3f4a;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
         z-index: 4;
-    
-      }
-    
-      .rect-2:active {
-    
+
+    }
+
+    .rect-2:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .plus {
-    
+    }
+
+    .plus {
+
         width: 3vw;
         height: 0.5vh;
         margin-top: 3vw;
@@ -689,18 +689,18 @@
         z-index: 1;
         background-color: #3d3f4a;
         z-index: 3;
-    
-      }
-    
-      .plus:active {
-    
+
+    }
+
+    .plus:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      .plus-1 {
-    
+    }
+
+    .plus-1 {
+
         width: 1vw;
         height: 1.5vh;
         left: 0.3vw;
@@ -708,23 +708,22 @@
         position: relative;
         z-index: 0;
         background-color: #3d3f4a;
-        box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+        box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
         z-index: 2;
-    
-      }
-    
-      .plus-1:active {
-    
+
+    }
+
+    .plus-1:active {
+
         transition: 0.2s;
         box-shadow: 0 5px rgb(102, 102, 102);
         transform: translate(5px 5px);
-      }
-    
-      //---------------------------------------------------------------
-    
-    
-      .next {
-    
+    }
+
+    //---------------------------------------------------------------
+
+    .next {
+
         width: 100vw;
         height: 30vh;
         color: #fff;
@@ -733,10 +732,10 @@
         margin-bottom: -80vh;
         font-family: 'Yuji Boku', serif;
         @include flex(flex, center, center);
-      }
-    
-      .next1 {
-    
+    }
+
+    .next1 {
+
         width: 100vw;
         height: 30vh;
         color: #ffffff;
@@ -745,15 +744,13 @@
         font-size: 10vw;
         font-family: 'Yuji Boku', serif;
         @include flex(flex, center, center);
-      }
+    }
 
-      .fa-solid {
+    .fa-solid {
 
         font-size: 13vw;
-      }
-
     }
-    
-    
-    //---------------------------------------------------------
-    
+
+}
+
+//---------------------------------------------------------

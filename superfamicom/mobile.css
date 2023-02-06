@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 575px) {
   #root {
     width: 100%;
     height: 350vh;
-    background: url(./pic/Super-Mario-Super-Mario-Bros-1899001-wallhere.com.jpg);
+    background: url("./pic/Super-Mario-Super-Mario-Bros-1899001-wallhere.com.jpg");
     background-size: cover;
     background-position: 75%;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
     background-color: #d9d9d9;
     border-radius: 20px;
     margin-top: -300vh;
-    box-shadow: 0px 5px 5px 0px rgb(102, 102, 102);
+    box-shadow: 0 5px 5px 0 rgb(102, 102, 102);
     position: absolute;
     z-index: 2;
     display: flex;
@@ -36,7 +36,7 @@
     position: absolute;
     margin-top: -30vh;
     margin-right: -58vw;
-    background: url(../superfamicom/pic/logo.png);
+    background: url("../superfamicom/pic/logo.png");
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@
     border-top-right-radius: 50px;
     border-bottom-left-radius: 25vw;
     border-bottom-right-radius: 25vw;
-    box-shadow: 0px 5px 5px rgb(102, 102, 102);
+    box-shadow: 0 5px 5px rgb(102, 102, 102);
   }
   #root .pack:active {
     transition: 0.2s;
@@ -75,7 +75,7 @@
     position: absolute;
     border-radius: 10px;
     background-color: #d9d9d9;
-    box-shadow: 0px 10px 10px rgb(44, 44, 44);
+    box-shadow: 0 10px 10px rgb(44, 44, 44);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +97,7 @@
     position: absolute;
     border-radius: 20px;
     background-color: #d9d9d9;
-    box-shadow: 0px 5px 5px rgb(7, 7, 7);
+    box-shadow: 0 5px 5px rgb(7, 7, 7);
     cursor: pointer;
   }
   #root .powertext {
@@ -114,7 +114,7 @@
     position: absolute;
     border-radius: 10px;
     background-color: #d9d9d9;
-    box-shadow: 0px 10px 10px rgb(44, 44, 44);
+    box-shadow: 0 10px 10px rgb(44, 44, 44);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +147,7 @@
     border-radius: 5px;
     margin-bottom: -17vh;
     background-color: #a1a1a1;
-    box-shadow: 0px 10px 10px rgb(102, 102, 102);
+    box-shadow: 0 10px 10px rgb(102, 102, 102);
     border: 0;
     display: flex;
     justify-content: center;
@@ -179,7 +179,7 @@
     position: absolute;
     margin-bottom: -35vh;
     margin-left: -55vw;
-    background: url(../superfamicom/pic/nin.png);
+    background: url("../superfamicom/pic/nin.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -190,7 +190,7 @@
     position: absolute;
     margin-left: -50vw;
     margin-bottom: -40vh;
-    background: url(../superfamicom/pic/super.png);
+    background: url("../superfamicom/pic/super.png");
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -284,7 +284,7 @@
     height: 20vh;
     margin-top: -140vh;
     background-color: #323639;
-    box-shadow: 0px 10px 10px rgb(102, 102, 102);
+    box-shadow: 0 10px 10px rgb(102, 102, 102);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,7 +292,7 @@
   .body-2 {
     width: 65vw;
     height: 20vh;
-    background: url(./pic/zelda.png);
+    background: url("./pic/zelda.png");
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -305,7 +305,7 @@
     margin-top: -140vh;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
-    box-shadow: 0px 10px 10px rgb(102, 102, 102);
+    box-shadow: 0 10px 10px rgb(102, 102, 102);
     position: absolute;
     z-index: 10;
     display: flex;
@@ -331,7 +331,7 @@
     position: absolute;
     background-color: #3d3f4a;
     z-index: 9;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
   }
   .cir-1:active {
     transition: 0.2s;
@@ -346,7 +346,7 @@
     position: absolute;
     background-color: #3d3f4a;
     z-index: 8;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
   }
   .cir-2:active {
     transition: 0.2s;
@@ -361,7 +361,7 @@
     margin-top: -4vw;
     background-color: #3d3f4a;
     z-index: 7;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
   }
   .cir-3:active {
     transition: 0.2s;
@@ -376,7 +376,7 @@
     margin-bottom: -4vw;
     background-color: #3d3f4a;
     z-index: 6;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
   }
   .cir-4:active {
     transition: 0.2s;
@@ -391,7 +391,7 @@
     margin-top: -20vw;
     background-color: #3d3f4a;
     z-index: 5;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
   }
   .rect-1 {
     width: 1.5vw;
@@ -401,7 +401,7 @@
     position: absolute;
     background-color: #3d3f4a;
     z-index: 4;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
   }
   .rect-1:active {
     transition: 0.2s;
@@ -416,7 +416,7 @@
     position: absolute;
     background-color: #3d3f4a;
     z-index: 3;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
   }
   .minus:active {
     transition: 0.2s;
@@ -431,7 +431,7 @@
     margin-top: -140vh;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
-    box-shadow: 0px 10px 10px rgb(102, 102, 102);
+    box-shadow: 0 10px 10px rgb(102, 102, 102);
     position: absolute;
     z-index: 10;
   }
@@ -455,7 +455,7 @@
     bottom: 15vh;
     position: absolute;
     background-color: #3d3f4a;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
     z-index: 9;
     color: #fff;
     display: flex;
@@ -475,7 +475,7 @@
     bottom: 12vh;
     position: absolute;
     background-color: #3d3f4a;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
     z-index: 8;
     color: #fff;
     font-size: 0.5px;
@@ -496,7 +496,7 @@
     bottom: 13.5vh;
     position: absolute;
     background-color: #3d3f4a;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
     z-index: 7;
     color: #fff;
     font-size: 0.5px;
@@ -518,7 +518,7 @@
     bottom: 13.5vh;
     position: absolute;
     background-color: #3d3f4a;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
     z-index: 7;
     color: #fff;
     font-size: 0.5px;
@@ -540,7 +540,7 @@
     bottom: 8vh;
     position: absolute;
     background-color: #3d3f4a;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
     z-index: 5;
   }
   .rect-2 {
@@ -551,7 +551,7 @@
     border-radius: 100%;
     position: absolute;
     background-color: #3d3f4a;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
     z-index: 4;
   }
   .rect-2:active {
@@ -581,7 +581,7 @@
     position: relative;
     z-index: 0;
     background-color: #3d3f4a;
-    box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+    box-shadow: 2px 3px 1px 0 rgb(102, 102, 102);
     z-index: 2;
   }
   .plus-1:active {
