@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./superfamicom/sp.css">
+  <link rel="stylesheet" href="/superfamicom/mobile.css">
+  <link rel="stylesheet" href="/superfamicom/top.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7986c55620.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <audio src="./superfamicom/pic/mario.mp3" autoplay loop></audio>
+  <div id="root">
+    <div id="top">
+      <i class="fa-solid fa-circle-up fa-5x"></i>
+    </div>
+    <div class="control-1"></div>
+    <div class="control-1-1"></div>
+    <div class="line-1"></div>
+    <div class="control-2"></div>
+    <div class="control-2-1"></div>
+    <div class="line-2"></div>
+
+    <!------------------------------------------------------------>
+
+    <div class="body1">
+      <div class="splogo"></div>
+      <div class="body2">
+        <div class="pack"></div>
+        <div class="body3">
+          <div class="body3-1">
+            <div class="power1"></div>
+            <h3 class="powertext">POWER</h3>
+            <div class="light"></div>
+          </div>
+        </div>
+        <div class="body4">
+          <div class="body4-1">
+            <h3 class="reset">RESET</h3>
+          </div>
+        </div>
+        <div class="body5">
+          <h3 class="eject">EJECT</h3>
+        </div>
+
+        <!------------------------------------------------------------>
+
+        <div class="nintendo"></div>
+        <div class="super"></div>
+        <div class="famicom">
+          <iframe class="famicom-1" width="1040" height="515" src="https://www.youtube.com/embed/XA6R8iSGpEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="back"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <div class="swi">
+      <iframe class="swi-1" width="720" height="380" src="https://www.youtube.com/embed/vePUsuk-k9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="back"></iframe>
+    </div>
+    <div class="body-1">
+      <div class="body-2"></div>
+    </div>
+    <div class="leftbtn"></div>
+    <div class="left">
+      <div class="cir-1"></div>
+      <div class="cir-2"></div>
+      <div class="cir-3"></div>
+      <div class="cir-4"></div>
+      <div class="cir-5"></div>
+      <div class="rect-1"></div>
+      <div class="minus"></div>
+    </div>
+    <div class="rightbtn"></div>
+    <div class="right">
+      <div class="cir-6">X</div>
+      <div class="cir-7">B</div>
+      <div class="cir-8">A</div>
+      <div class="cir-9">Y</div>
+      <div class="cir-10"></div>
+      <div class="rect-2"></div>
+      <div class="plus"></div>
+      <div class="plus-1"></div>
+    </div>
+    <div class="next">ゲームはいいです</div>
+    <div class="next1">次のコンソールは？</div>
+
+  </div>
+
+  <script>
+    const next = document.querySelector('.next');
+    const move = next.children;
+    let move1 = [{
+        transform: 'translateY(-40px)'
+      },
+      {
+        transform: 'translateY(10px)'
+      },
+      {
+        transform: 'translateY(-40px)'
+      }
+    ];
+
+    let move2 = {
+      duration: 1500,
+      interations: Infinity
+    };
+
+    setInterval(() => {
+
+      next.animate(move1, move2);
+    }, 1500);
+
+    const next1 = document.querySelector('.next1');
+    const moving = next1.children;
+    let move3 = [{
+        transform: 'translateY(-40px)'
+      },
+      {
+        transform: 'translateY(10px)'
+      },
+      {
+        transform: 'translateY(-40px)'
+      }
+    ];
+
+    let move4 = {
+      duration: 1500,
+      interations: Infinity
+    };
+
+    setInterval(() => {
+
+      next1.animate(move3, move4);
+    }, 1500);
+
+
+    //-----------------------------------------------------------
+    const root = document.getElementById('root');
+    const power = document.querySelector('.power1');
+    const light = document.querySelector('.light');
+    const famicom = document.querySelector('.famicom');
+
+    let data = true;
+    power.addEventListener('click', () => {
+
+      if (data === true) {
+        data = false;
+        power.style.transform = "translateY(-25px)";
+        power.style.transition = "0.3s";
+        light.style.backgroundColor = "#D25050";
+        famicom.style.transition = "1s";
+        famicom.style.opacity = "1";
+
+        console.log(power);
+
+      } else {
+        data = true;
+        power.style.transform = "translateY(0px)";
+        power.style.transition = "0.3s";
+        light.style.backgroundColor = "#585858";
+        famicom.style.transition = "1s";
+        famicom.style.opacity = "0";
+
+        console.log(light);
+
+      }
+    });
+
+    const abtn = document.querySelector('.cir-8');
+    const swi = document.querySelector('.swi');
+
+    let data1 = true;
+    abtn.addEventListener('click', () => {
+
+      if (data1 === true) {
+        data1 = false;
+        swi.style.opacity = "0";
+        swi.style.transition = "1s";
+
+        console.log(power);
+
+      } else {
+        data1 = true;
+        swi.style.opacity = "1";
+        swi.style.transition = "1s";
+
+        console.log(light);
+
+      }
+    });
+
+    const up = document.querySelector('.fa-solid');
+
+up.addEventListener('click', (event) => {
+
+  window.scrollTo({
+
+    top: 0,
+    behavior: "smooth",
+  });
+
+});
+  </script>
+</body>
+
+</html>
