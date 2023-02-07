@@ -141,3 +141,5 @@ fort.addEventListener('click', function(){
 let page = 'https://seimin123.github.io/VER-1/';
 location.href = page;
 });
+
+

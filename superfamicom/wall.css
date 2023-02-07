@@ -1,0 +1,114 @@
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+#root {
+
+    width: 100vw;
+    height: 100vh;
+    background: url("../superfamicom/pic/mariobro.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 238, 0);
+
+}
+
+.button {
+
+    width: 25vw;
+    height: 15vh;
+    /* background-color: rgb(223, 223, 223); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -50vw;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 5px 5px 50px rgb(255, 255, 255);
+    font-family: 'Lora', serif;
+    font-size: 5em;
+    color: #ffffff;
+    border: 5px solid white;
+}
+
+.button:hover {
+
+    transition: 0.3s;
+
+}
+
+.button:active {
+
+    transition: 0.2s;
+    box-shadow: 2px 2px 10px #000;
+    transform: translateY(5px);
+}
+
+@media (max-width: 575px) {
+
+    #root {
+
+        width: 100vw;
+        height: 100vh;
+        background: url("../superfamicom/pic/mariobro.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 25%;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 238, 0);
+
+    }
+
+    .button {
+
+        width: 85vw;
+        height: 10vh;
+        cursor: pointer;
+        box-shadow: 5px 5px 50px rgb(255, 255, 255);
+        font-family: 'Lora', serif;
+        font-size: 3em;
+        color: #ffffff;
+        border: 3px solid white;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: -50vw;
+        margin-bottom: -40vh;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .button:hover {
+
+        transition: 0.3s;
+
+    }
+
+    .button:active {
+
+        transition: 0.2s;
+        box-shadow: 2px 2px 10px #000;
+        transform: translateY(5px);
+    }
+}
