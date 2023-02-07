@@ -49,6 +49,7 @@ body::-webkit-scrollbar {
     font-size: 5em;
     color: #ffffff;
     border: 5px solid white;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -94,9 +95,10 @@ body::-webkit-scrollbar {
         border: 3px solid white;
         border-radius: 20px;
         text-align: center;
+        font-weight: bold;
         margin-left: -50vw;
         margin-bottom: -40vh;
-        font-family: 'Ubuntu', sans-serif;
+
     }
 
     .button:hover {
