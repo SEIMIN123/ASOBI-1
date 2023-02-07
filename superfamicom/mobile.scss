@@ -172,7 +172,7 @@
         .reset {
 
             font-size: 1vw;
-            margin-bottom: -5vh;
+            margin-bottom: -3.5vh;
             position: absolute;
             color: #fff;
         }
@@ -337,7 +337,7 @@
         position: absolute;
         // border: 10px solid white;
         border-radius: 30px;
-        margin-top: -140vh;
+        margin-top: -150vh;
         @include flex(flex, center, center);
     }
 
@@ -352,7 +352,7 @@
 
         width: 70vw;
         height: 20vh;
-        margin-top: -140vh;
+        margin-top: -150vh;
         background-color: #323639;
         box-shadow: 0 10px 10px rgb(102, 102, 102);
         @include flex(flex, center, center);
@@ -374,7 +374,7 @@
         height: 20vh;
         background-color: #00c4e4;
         margin-left: -80vw;
-        margin-top: -140vh;
+        margin-top: -150vh;
         border-top-left-radius: 100px;
         border-bottom-left-radius: 100px;
         box-shadow: 0 10px 10px rgb(102, 102, 102);
@@ -389,7 +389,7 @@
         height: 20vh;
         background-color: #434340;
         margin-left: -80vw;
-        margin-top: -121vh;
+        margin-top: -131vh;
         border-top-left-radius: 100px;
         border-bottom-left-radius: 100px;
         position: absolute;
@@ -530,7 +530,7 @@
         height: 20vh;
         background-color: #ff6559;
         margin-right: -80vw;
-        margin-top: -140vh;
+        margin-top: -150vh;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
         box-shadow: 0 10px 10px rgb(102, 102, 102);
@@ -545,7 +545,7 @@
         height: 20vh;
         background-color: #434340;
         margin-right: -80vw;
-        margin-top: -121vh;
+        margin-top: -131vh;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
         position: absolute;
@@ -729,7 +729,7 @@
         color: #fff;
         position: absolute;
         font-size: 10vw;
-        margin-bottom: -80vh;
+        margin-bottom: -90vh;
         font-family: 'Yuji Boku', serif;
         @include flex(flex, center, center);
     }
@@ -746,8 +746,17 @@
         @include flex(flex, center, center);
     }
 
-    .fa-5x {
-        font-size: 3.5em;
+    .next2 {
+
+        width: 80vw;
+        height: 30vh;
+        color: #ffffff;
+        position: absolute;
+        margin-top: -190vh;
+        margin-left: 6vw;
+        font-size: 6vw;
+        font-family: 'Yuji Boku', serif;
+        @include flex(flex, center, center);
       }
 
 }

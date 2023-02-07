@@ -44,6 +44,29 @@
       next1.animate(move3, move4);
     }, 1500);
 
+    const next2 = document.querySelector('.next2');
+    const moving1 = next2.children;
+    let move5 = [{
+        transform: 'translateX(-13px)'
+      },
+      {
+        transform: 'translateX(10px)'
+      },
+      {
+        transform: 'translateX(-13px)'
+      }
+    ];
+
+    let move6 = {
+      duration: 1500,
+      interations: Infinity
+    };
+
+    setInterval(() => {
+
+      next2.animate(move5, move6);
+    }, 1500);
+
 
     //-----------------------------------------------------------
     const root = document.getElementById('root');
@@ -110,4 +133,11 @@ up.addEventListener('click', (event) => {
     behavior: "smooth",
   });
 
+});
+
+
+const fort = document.querySelector('.body4-1');
+fort.addEventListener('click', function(){
+let page = 'https://seimin123.github.io/VER-1/';
+location.href = page;
 });

@@ -175,13 +175,15 @@
       position: absolute;
       border-radius: 20px;
       background-color: #454545;
+      cursor: pointer;
       @include flex(flex, center, center);
     }
 
     .reset {
 
-      font-size: 1vw;
+      font-size: 0.8vw;
       margin-bottom: -7vh;
+      text-align: center;
       position: absolute;
       color: #fff;
     }
@@ -739,6 +741,18 @@
     position: absolute;
     margin-bottom: -330vh;
     font-size: 10vw;
+    font-family: 'Yuji Boku', serif;
+    @include flex(flex, center, center);
+  }
+
+  .next2 {
+
+    width: 100vw;
+    height: 30vh;
+    color: #ffffff;
+    position: absolute;
+    margin-bottom: -170vh;
+    font-size: 5vw;
     font-family: 'Yuji Boku', serif;
     @include flex(flex, center, center);
   }

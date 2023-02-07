@@ -2,7 +2,7 @@
 
     position: fixed;
     color:rgb(255, 45, 45);
-    right: 3vw; 
+    right: 4.5vw; 
     bottom: 5vh;
     z-index: 999;   
     transition: 0.5s;
@@ -12,6 +12,6 @@
 
 .fa-solid:hover {
 
-    color: rgb(197, 46, 0);
+    color: rgb(252, 98, 98);
     opacity: 1;
 }
