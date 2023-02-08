@@ -85,7 +85,7 @@ body::-webkit-scrollbar {
 
     .button {
 
-        width: 85vw;
+        width: 65vw;
         height: 10vh;
         cursor: pointer;
         box-shadow: 5px 5px 50px rgb(255, 255, 255);
@@ -97,7 +97,7 @@ body::-webkit-scrollbar {
         text-align: center;
         font-weight: bold;
         margin-left: -50vw;
-        margin-bottom: -40vh;
+        margin-bottom: -55vh;
 
     }
 
